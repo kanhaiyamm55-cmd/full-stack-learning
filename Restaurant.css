@@ -1,187 +1,738 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-scroll-behavior:smooth;
+```css
+/* =========================================================
+   KANHA FOOD PALACE
+   Restaurant.css
+========================================================= */
+
+
+/* =========================================================
+   1. RESET & GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-color:white;
+html {
+    scroll-behavior: smooth;
 }
 
-/* Background Image */
-
-body::before{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-
-background:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4")
-center/cover no-repeat;
-
-opacity:0.4;
-z-index:-1;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #fffaf5;
+    color: #333;
 }
 
-/* Navbar */
-
-nav{
-background:rgba(0,0,0,0.85);
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
-position:sticky;
-top:0;
-z-index:100;
+a {
+    text-decoration: none;
 }
 
-.logo{
-font-size:30px;
-font-weight:bold;
-color:orange;
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
 }
 
-nav ul{
-display:flex;
-list-style:none;
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
 }
 
-nav ul li{
-margin-left:25px;
+
+/* =========================================================
+   2. NAVBAR
+========================================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-nav ul li a{
-color:white;
-text-decoration:none;
-font-size:18px;
+.navbar {
+    min-height: 70px;
+    padding: 0 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #1f1f1f;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
-nav ul li a:hover{
-color:orange;
+.logo {
+    color: #ffb703;
+    font-size: 23px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
-/* Hero */
+.nav-links {
+    list-style: none;
 
-.hero{
-height:90vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
 }
 
-.hero-content{
-background:rgba(0,0,0,0.7);
-padding:40px;
-border-radius:10px;
+.nav-links a {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.3s;
 }
 
-.hero h1{
-font-size:60px;
-margin-bottom:15px;
+.nav-links a:hover {
+    color: #ffb703;
 }
 
-.hero p{
-font-size:22px;
+
+/* =========================================================
+   3. HERO SECTION
+========================================================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        linear-gradient(
+            135deg,
+            #7b2d26,
+            #d97706
+        );
 }
 
-/* Sections */
-
-section{
-padding:60px 40px;
+.hero-content {
+    max-width: 800px;
+    color: white;
 }
 
-.section-title{
-text-align:center;
-font-size:40px;
-margin-bottom:30px;
-color:orange;
+.hero-subtitle {
+    color: #ffb703;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
-/* Menu Cards */
-
-.menu-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 
-.card{
-background:rgba(0,0,0,0.8);
-padding:20px;
-border-radius:10px;
-text-align:center;
-transition:0.5s;
+.hero-description {
+    font-size: 20px;
+    margin-bottom: 35px;
+    color: #f5f5f5;
 }
 
-.card:hover{
-transform:translateY(-10px);
+.hero-btn {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background: #ffb703;
+    color: #222;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+    font-size: 16px;
+
+    transition: 0.3s;
 }
 
-.card h3{
-margin-bottom:10px;
-color:orange;
+.hero-btn:hover {
+    background: #fb8500;
+    color: white;
+    transform: translateY(-3px);
 }
 
-.card p{
-margin-bottom:10px;
+
+/* =========================================================
+   4. MENU SECTION
+========================================================= */
+
+.menu-section {
+    padding: 90px 0;
+    background: #fffaf5;
 }
 
-/* Contact */
-
-.contact-box{
-background:rgba(0,0,0,0.8);
-padding:30px;
-max-width:600px;
-margin:auto;
-border-radius:10px;
+.alternate-section {
+    background: #fff;
 }
 
-input,textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:none;
+.section-subtitle {
+    text-align: center;
+
+    color: #d97706;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
 }
 
-button{
-padding:12px 25px;
-background:orange;
-border:none;
-cursor:pointer;
-font-weight:bold;
+.section-title {
+    text-align: center;
+
+    font-size: 38px;
+
+    color: #222;
+
+    margin-bottom: 45px;
 }
 
-/* Footer */
+.section-title::after {
+    content: "";
 
-footer{
-background:black;
-text-align:center;
-padding:20px;
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    margin: 12px auto 0;
+
+    background: #ffb703;
+
+    border-radius: 5px;
 }
 
-/* Responsive */
 
-@media(max-width:768px){
+/* =========================================================
+   5. MENU GRID
+========================================================= */
 
-.hero h1{
-font-size:40px;
+.menu-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
 }
 
-nav{
-flex-direction:column;
+
+/* =========================================================
+   6. FOOD CARD
+========================================================= */
+
+.card {
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #eee;
+
+    transition: 0.3s;
 }
 
-nav ul{
-margin-top:10px;
-flex-wrap:wrap;
-justify-content:center;
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
 }
 
+.food-icon {
+    height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 75px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff1d6,
+            #ffe0a3
+        );
 }
+
+.card-content {
+    padding: 25px;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #222;
+
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+.food-bottom {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+
+    color: #d97706;
+}
+
+.order-btn {
+    border: none;
+
+    background: #222;
+    color: white;
+
+    padding: 9px 18px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #ffb703;
+    color: #222;
+}
+
+
+/* =========================================================
+   7. CONTACT SECTION
+========================================================= */
+
+.contact-section {
+    padding: 90px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff3df,
+            #fffaf5
+        );
+}
+
+.contact-intro {
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: -25px auto 45px;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   8. CONTACT WRAPPER
+========================================================= */
+
+.contact-wrapper {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 40px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   9. CONTACT INFORMATION
+========================================================= */
+
+.contact-info {
+    background: #222;
+
+    color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.contact-info h3 {
+    color: #ffb703;
+
+    font-size: 26px;
+
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #ddd;
+
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-item strong {
+    color: #ffb703;
+}
+
+.info-item span {
+    color: #ddd;
+}
+
+
+/* =========================================================
+   10. BOOKING FORM
+========================================================= */
+
+.contact-form {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background: #fff;
+
+    transition: 0.3s;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #ffb703;
+
+    box-shadow: 0 0 0 3px rgba(255, 183, 3, 0.12);
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   11. SUBMIT BUTTON
+========================================================= */
+
+.submit-btn {
+    width: 100%;
+
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    background: #d97706;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #b45309;
+
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   12. FORM SUCCESS MESSAGE
+========================================================= */
+
+.form-message {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    min-height: 22px;
+}
+
+
+/* =========================================================
+   13. FOOTER
+========================================================= */
+
+footer {
+    background: #171717;
+
+    color: white;
+
+    text-align: center;
+}
+
+.footer-content {
+    padding: 45px 20px;
+}
+
+.footer-content h3 {
+    color: #ffb703;
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+.footer-content p {
+    color: #ccc;
+
+    margin: 6px 0;
+}
+
+.footer-bottom {
+    padding: 18px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    color: #999;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   14. RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 15px 4%;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 18px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 520px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   15. RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 500px;
+
+        padding: 60px 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .menu-section,
+    .contact-section {
+        padding: 65px 0;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .contact-form,
+    .contact-info {
+        padding: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   16. SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+}
+```
