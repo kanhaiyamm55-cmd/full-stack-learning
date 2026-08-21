@@ -1,153 +1,665 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>kanhaiya Food Palace Restaurant</title>
-<link rel="stylesheet" href="Restaurant.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Kanha Food Palace - Delicious food, great taste and the best dining experience in Jaunpur, Uttar Pradesh.">
+
+    <title>Kanha Food Palace | Restaurant</title>
+
+    <link rel="stylesheet" href="Restaurant.css">
 </head>
+
 <body>
 
-<!-- Navbar -->
+    <!-- ================= NAVBAR ================= -->
 
-<nav>
+    <header>
+        <nav class="navbar">
 
-<div class="logo">Kanha Food Palace</div>
+            <div class="logo">
+                🍽️ Kanha Food Palace
+            </div>
 
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#starters">Starters</a></li>
-<li><a href="#maincourse">Main Course</a></li>
-<li><a href="#desserts">Desserts</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#starters">Starters</a></li>
+                <li><a href="#maincourse">Main Course</a></li>
+                <li><a href="#desserts">Desserts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-</nav>
+        </nav>
+    </header>
 
 
-<section class="hero" id="home">
+    <!-- ================= HERO ================= -->
 
-<div class="hero-content">
-<h1>Welcome To Kanha Food Palace</h1>
-<p>Delicious Food • Great Taste • Best Experience </p>
-</div>
+    <section class="hero" id="home">
 
-</section>
+        <div class="hero-content">
 
-<!-- Starters -->
+            <p class="hero-subtitle">
+                Welcome to
+            </p>
 
-<section id="starters">
+            <h1>
+                Kanha Food Palace
+            </h1>
 
-<h2 class="section-title">Starters</h2>
+            <p class="hero-description">
+                Delicious Food • Great Taste • Best Experience
+            </p>
 
-<div class="menu-grid">
+            <a href="#maincourse" class="hero-btn">
+                Explore Our Menu
+            </a>
 
-<div class="card">
-<h3>Veg Spring Roll</h3>
-<p>Crispy and tasty rolls.</p>
-<p>₹249</p>
-</div>
+        </div>
 
-<div class="card">
-<h3>Paneer Tikka</h3>
-<p>Spicy grilled paneer.</p>
-<p>₹299</p>
-</div>
+    </section>
 
-<div class="card">
-<h3>French Fries</h3>
-<p>Golden crispy fries.</p>
-<p>₹199</p>
-</div>
 
-</div>
+    <!-- ================= STARTERS ================= -->
 
-</section>
+    <section class="menu-section" id="starters">
 
-<!-- Main Course -->
+        <div class="container">
 
-<section id="maincourse">
+            <p class="section-subtitle">
+                START YOUR MEAL
+            </p>
 
-<h2 class="section-title">Main Course</h2>
+            <h2 class="section-title">
+                Our Starters
+            </h2>
 
-<div class="menu-grid">
+            <div class="menu-grid">
 
-<div class="card">
-<h3>Butter Paneer</h3>
-<p>Rich creamy gravy.</p>
-<p>₹399</p>
-</div>
+                <article class="card">
 
-<div class="card">
-<h3>Veg Biryani</h3>
-<p>Traditional Indian taste.</p>
-<p>₹249</p>
-</div>
+                    <div class="food-icon">
+                        🥟
+                    </div>
 
-<div class="card">
-<h3>Dal Makhani</h3>
-<p>Punjabi special.</p>
-<p>₹199</p>
-</div>
+                    <div class="card-content">
 
-</div>
+                        <h3>Veg Spring Roll</h3>
 
-</section>
+                        <p>
+                            Crispy and tasty vegetable spring rolls
+                            served with delicious dip.
+                        </p>
 
-<!-- Desserts -->
+                        <div class="food-bottom">
+                            <span class="price">₹249</span>
+                            <button type="button" class="order-btn">
+                                Order
+                            </button>
+                        </div>
 
-<section id="desserts">
+                    </div>
 
-<h2 class="section-title">Desserts</h2>
+                </article>
 
-<div class="menu-grid">
 
-<div class="card">
-<h3>Chocolate Cake</h3>
-<p>Soft and delicious.</p>
-<p>₹549</p>
-</div>
+                <article class="card">
 
-<div class="card">
-<h3>Ice Cream</h3>
-<p>Vanilla & Chocolate.</p>
-<p>₹99</p>
-</div>
+                    <div class="food-icon">
+                        🧀
+                    </div>
 
-<div class="card">
-<h3>Gulab Jamun</h3>
-<p>Indian sweet dish.</p>
-<p>₹89</p>
-</div>
+                    <div class="card-content">
 
-</div>
+                        <h3>Paneer Tikka</h3>
 
-</section>
+                        <p>
+                            Spicy grilled paneer marinated with
+                            special Indian spices.
+                        </p>
 
-<!-- Contact -->
+                        <div class="food-bottom">
+                            <span class="price">₹299</span>
+                            <button type="button" class="order-btn">
+                                Order
+                            </button>
+                        </div>
 
-<section id="contact">
+                    </div>
 
-<h2 class="section-title">Contact Us</h2>
+                </article>
 
-<div class="contact-box">
 
-<input type="text" placeholder="Your Name">
+                <article class="card">
 
-<input type="email" placeholder="Your Email">
+                    <div class="food-icon">
+                        🍟
+                    </div>
 
-<textarea rows="5" placeholder="Message"></textarea>
+                    <div class="card-content">
 
-<button>Book Table</button>
+                        <h3>French Fries</h3>
 
-</div>
+                        <p>
+                            Golden crispy fries prepared fresh
+                            and served hot.
+                        </p>
 
-</section>
+                        <div class="food-bottom">
+                            <span class="price">₹199</span>
+                            <button type="button" class="order-btn">
+                                Order
+                            </button>
+                        </div>
 
-<footer>
-<h3>© 2026 kanha Food Palace Restaurant</h3>
-<p>Address: jaunpur,uttar pradesh, india Contact: 1234567890,2312121223</p>
-</footer>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN COURSE ================= -->
+
+    <section class="menu-section alternate-section" id="maincourse">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                CHEF'S SPECIAL
+            </p>
+
+            <h2 class="section-title">
+                Main Course
+            </h2>
+
+            <div class="menu-grid">
+
+                <article class="card">
+
+                    <div class="food-icon">
+                        🍛
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Butter Paneer</h3>
+
+                        <p>
+                            Soft paneer cooked in a rich and creamy
+                            tomato-based gravy.
+                        </p>
+
+                        <div class="food-bottom">
+                            <span class="price">₹399</span>
+                            <button type="button" class="order-btn">
+                                Order
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="food-icon">
+                        🍚
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Veg Biryani</h3>
+
+                        <p>
+                            Aromatic basmati rice cooked with fresh
+                            vegetables and Indian spices.
+                        </p>
+
+                        <div class="food-bottom">
+                            <span class="price">₹249</span>
+                            <button type="button" class="order-btn">
+                                Order
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="food-icon">
+                        🥘
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Dal Makhani</h3>
+
+                        <p>
+                            Punjabi special creamy dal cooked
+                            with traditional spices.
+                        </p>
+
+                        <div class="food-bottom">
+                            <span class="price">₹199</span>
+                            <button type="button" class="order-btn">
+                                Order
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DESSERTS ================= -->
+
+    <section class="menu-section" id="desserts">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                SWEET ENDING
+            </p>
+
+            <h2 class="section-title">
+                Delicious Desserts
+            </h2>
+
+            <div class="menu-grid">
+
+                <article class="card">
+
+                    <div class="food-icon">
+                        🍰
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Chocolate Cake</h3>
+
+                        <p>
+                            Soft, moist and delicious chocolate cake
+                            prepared with premium ingredients.
+                        </p>
+
+                        <div class="food-bottom">
+                            <span class="price">₹549</span>
+                            <button type="button" class="order-btn">
+                                Order
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="food-icon">
+                        🍨
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Ice Cream</h3>
+
+                        <p>
+                            Delicious vanilla and chocolate ice cream
+                            served chilled.
+                        </p>
+
+                        <div class="food-bottom">
+                            <span class="price">₹99</span>
+                            <button type="button" class="order-btn">
+                                Order
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="food-icon">
+                        🍮
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Gulab Jamun</h3>
+
+                        <p>
+                            Traditional Indian sweet served warm
+                            with delicious syrup.
+                        </p>
+
+                        <div class="food-bottom">
+                            <span class="price">₹89</span>
+                            <button type="button" class="order-btn">
+                                Order
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT / BOOK TABLE ================= -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                RESERVATION
+            </p>
+
+            <h2 class="section-title">
+                Book Your Table
+            </h2>
+
+            <p class="contact-intro">
+                Fill in the details below and reserve your table
+                at Kanha Food Palace.
+            </p>
+
+
+            <div class="contact-wrapper">
+
+                <!-- Contact Information -->
+
+                <div class="contact-info">
+
+                    <h3>
+                        Visit Our Restaurant
+                    </h3>
+
+                    <p>
+                        Enjoy delicious food with your family
+                        and friends.
+                    </p>
+
+                    <div class="info-item">
+                        <strong>📍 Address</strong>
+                        <span>
+                            Jaunpur, Uttar Pradesh, India
+                        </span>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>📞 Phone</strong>
+                        <span>
+                            +91 1234567890
+                        </span>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>✉️ Email</strong>
+                        <span>
+                            info@kanhafoodpalace.com
+                        </span>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>🕐 Opening Hours</strong>
+                        <span>
+                            10:00 AM – 10:00 PM
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- Booking Form -->
+
+                <div class="contact-form">
+
+                    <form id="bookingForm">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                minlength="2"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter phone number"
+                                    pattern="[0-9]{10}"
+                                    maxlength="10"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="date">
+                                    Booking Date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="date"
+                                    name="date"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="time">
+                                    Booking Time
+                                </label>
+
+                                <input
+                                    type="time"
+                                    id="time"
+                                    name="time"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="guests">
+                                Number of Guests
+                            </label>
+
+                            <select id="guests" name="guests" required>
+
+                                <option value="">
+                                    Select guests
+                                </option>
+
+                                <option value="1">
+                                    1 Guest
+                                </option>
+
+                                <option value="2">
+                                    2 Guests
+                                </option>
+
+                                <option value="3">
+                                    3 Guests
+                                </option>
+
+                                <option value="4">
+                                    4 Guests
+                                </option>
+
+                                <option value="5">
+                                    5 Guests
+                                </option>
+
+                                <option value="6+">
+                                    6+ Guests
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Special Request
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                placeholder="Any special request?"
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="submit-btn"
+                        >
+                            Book Table
+                        </button>
+
+
+                        <p
+                            id="formMessage"
+                            class="form-message"
+                        ></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>
+                🍽️ Kanha Food Palace
+            </h3>
+
+            <p>
+                Delicious Food • Great Taste • Best Experience
+            </p>
+
+            <p>
+                📍 Jaunpur, Uttar Pradesh, India
+            </p>
+
+            <p>
+                📞 +91 1234567890
+            </p>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Kanha Food Palace. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
+```
